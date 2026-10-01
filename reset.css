@@ -1,0 +1,19 @@
+@media (max-width: 1300px) {
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .child:nth-child(3) {
+    grid-row: 3/4;
+    grid-column: 1/4;
+  }
+}
+
+@media (max-width: 800px) {
+  .parent {
+    display: flex;
+    flex-direction: column;
+  }
+}
